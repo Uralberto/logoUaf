@@ -1,0 +1,79 @@
+ .logo svg .cl1, .logo svg .cl2, .logo svg .cl3, .logo svg .cls-4 {
+    fill: none;
+}
+
+.logo svg .cl1, .logo svg .cls-4 {
+    stroke: #272839;
+}
+
+.logo svg .cl1,  .logo svg .cl3,.logo  svg .cls-4 {
+    stroke-width: 15px;
+}
+
+.logo svg .cl3 {
+    stroke: #2337f1;
+}
+
+
+.logo svg .cl3, .logo svg .cls-4 {
+
+    stroke-linecap: round;
+}
+
+.logo svg .cls-5 {
+    stroke: none;
+}
+
+
+
+ #letra-A  {
+    animation:  animacionLogo1 3s ease-out forwards, animacionLogo2 3s linear 8s forwards;
+
+}
+
+#brazo-letra-U {
+    animation: animacionLogo1 3s ease-out  forwards, animacionLogo2 2.5s linear 7s forwards;
+
+}
+
+#parte-baja-letra-U {
+    animation: animacionLogo1 1s  ease-out  forwards, animacionLogo2 2s linear 6s forwards;
+} 
+
+#anilloExterno{
+    animation: animacionLogo1 1s ease-out  forwards, animacionLogo3  3s  linear 5s  backwards;
+
+} 
+
+
+@keyframes animacionLogo1 {
+    0% {
+        transform: scale(1.05);
+        stroke-width: 0;
+    }
+
+    100% {
+        stroke-width: 20px;
+    }
+
+}
+
+@keyframes animacionLogo2 {
+    from {
+        stroke-dasharray: 0 ;
+    }
+    to {
+        stroke-dasharray: 460px;
+    }
+}
+
+
+@keyframes animacionLogo3 {
+    from {
+        stroke-dasharray: 0 ;
+    }
+    to {
+        stroke-dasharray: 1250px;
+    }
+}
+
