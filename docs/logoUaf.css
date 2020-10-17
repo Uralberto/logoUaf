@@ -27,23 +27,23 @@
 
 
  #letra-A  {
-    animation:  animacionLogo1 2.5s ease-out forwards, animacionLogo2 3s linear 4s forwards;
+    animation:  animacionLogo1 1.5s ease-out forwards, animacionLogo2 2s linear 2s forwards;
 
 }
 
 #brazo-letra-U {
-    animation: animacionLogo1 2.5s ease-out  forwards, animacionLogo2 2.5s linear 3.5s forwards;
+    animation: animacionLogo1 1.5s ease-out  forwards, animacionLogo2 2s linear 3s forwards;
 
 }
 
 #parte-baja-letra-U {
-    animation: animacionLogo1 1s  ease-out  forwards, animacionLogo2 2s linear 3.0s forwards;
+    animation: animacionLogo1 1s  ease-out  forwards, animacionLogo2 2s linear 2.5s forwards;
 } 
 
 #anilloExterno{
     stroke-dasharray: 1250;
     stroke-dashoffset: 0;
-    animation: animacionLogo1 1s ease-out  forwards, animacionLogo3  3s  linear 2.5s  backwards;
+    animation: animacionLogo1 1s ease-out  forwards, animacionLogo3  2.5s  linear 1.5s  forwards;
 
 } 
 
