@@ -27,21 +27,23 @@
 
 
  #letra-A  {
-    animation:  animacionLogo1 2.5s ease-out forwards, animacionLogo2 3s linear 5.5s forwards;
+    animation:  animacionLogo1 2.5s ease-out forwards, animacionLogo2 3s linear 4s forwards;
 
 }
 
 #brazo-letra-U {
-    animation: animacionLogo1 2.5s ease-out  forwards, animacionLogo2 2.5s linear 5s forwards;
+    animation: animacionLogo1 2.5s ease-out  forwards, animacionLogo2 2.5s linear 3.5s forwards;
 
 }
 
 #parte-baja-letra-U {
-    animation: animacionLogo1 1s  ease-out  forwards, animacionLogo2 2s linear 4.5s forwards;
+    animation: animacionLogo1 1s  ease-out  forwards, animacionLogo2 2s linear 3.0s forwards;
 } 
 
 #anilloExterno{
-    animation: animacionLogo1 1s ease-out  forwards, animacionLogo3  3s  linear 4s  backwards;
+    stroke-dasharray: 1250;
+    stroke-dashoffset: 0;
+    animation: animacionLogo1 1s ease-out  forwards, animacionLogo3  3s  linear 2.5s  backwards;
 
 } 
 
@@ -70,10 +72,10 @@
 
 @keyframes animacionLogo3 {
     from {
-        stroke-dasharray: 0 ;
+        stroke-dashoffset: 1250px;
     }
     to {
-        stroke-dasharray: 1250px;
+        stroke-dashoffset: 0;
     }
 }
 
