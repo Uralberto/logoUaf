@@ -29,7 +29,7 @@ El método *getTotalLength()* de *javascript* permite obtener la longitud del  c
 
 El valor 452px se obtiene con el método *getTotalLength()*, como ya se dijo.
 
-Finalmente, se anima  la letra A (la insinua el triangulo azul) con un efecto de rotación. Empieza con la hipotenusa posicionada de manera manera horizontal, luego gira en sentido horario, por un segundo,  simulando un  movimiento similar a la  manecilla del segundero de un reloj. El efecto de rotación se logra insertando  el *path*  de la letra A dentro de una etiqueta *g*. No funciona si la animación se aplica directamente al selector del *path*.
+Finalmente, se anima  la letra A (la insinua el triangulo azul) con un efecto de rotación. Empieza con la hipotenusa posicionada de manera manera horizontal, luego gira en sentido horario, por un segundo,  simulando un  movimiento similar a la  manecilla del segundero de un reloj. El efecto de rotación se logra insertando  el  *path*  de la letra A dentro de una etiqueta *g*. No funciona si la animación se aplica directamente al selector del *path*.
 
 
 
