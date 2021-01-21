@@ -1,4 +1,9 @@
- .logo svg .cl1, .logo svg .cl2, .logo svg .cl3, .logo svg .cls-4 {
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.logo svg .cl1, .logo svg .cl2, .logo svg .cl3, .logo svg .cls-4 {
     fill: none;
 }
 
@@ -6,7 +11,7 @@
     stroke: #272839;
 }
 
-.logo svg .cl1,  .logo svg .cl3,.logo  svg .cls-4 {
+.logo svg .cl1, .logo svg .cl3, .logo svg .cls-4 {
     stroke-width: 15px;
 }
 
@@ -14,9 +19,7 @@
     stroke: #2337f1;
 }
 
-
 .logo svg .cl3, .logo svg .cls-4 {
-
     stroke-linecap: round;
 }
 
@@ -24,53 +27,71 @@
     stroke: none;
 }
 
-
-
- #letra-A  {
-    animation:  animacionLogo1 1.5s ease-out forwards, animacionLogo2 2s linear 2s forwards;
-
-}
-
-#brazo-letra-U {
-    animation: animacionLogo1 1.5s ease-out  forwards, animacionLogo2 2s linear 3s forwards;
-
-}
-
-#parte-baja-letra-U {
-    animation: animacionLogo1 1s  ease-out  forwards, animacionLogo2 2s linear 2.5s forwards;
-} 
-
-#anilloExterno{
+#anilloExterno {
     stroke-dasharray: 1250;
     stroke-dashoffset: 0;
-    animation: animacionLogo1 1s ease-out  forwards, animacionLogo3  2.5s  linear 1.5s  forwards;
+    animation: animacionLogoGeneral 0s ease-out forwards, animacionAnilloExterno 2s linear 2.5s forwards;
+}
 
-} 
 
 
-@keyframes animacionLogo1 {
+#letra-A-1 {
+    stroke-dasharray: 452;
+    stroke-dashoffset: 0;
+    animation: animacionLogoGeneral 2s ease-out forwards, animacionLetraA 2s linear 2.5s forwards;
+    transform-origin: 0 0;
+}
+
+#brazo-letra-U-1 {
+    animation: animacionLogoGeneral 2s ease-out forwards, animacionBrazoLetraU 2s linear 2.5s forwards;
+    stroke-dasharray: 197;
+    stroke-dashoffset: 0;
+}
+
+#parte-baja-letra-U-1 {
+    animation: animacionLogoGeneral 1s ease-out forwards, animacionParteBajaLetraU 2s linear 2.5s forwards;
+    stroke-dasharray: 288;
+    stroke-dashoffset: 0;
+}
+
+@keyframes animacionLogoGeneral {
     0% {
-        transform: scale(1.05);
+        transform: scale(1.04);
         stroke-width: 0;
     }
-
     100% {
         stroke-width: 20px;
     }
-
 }
 
-@keyframes animacionLogo2 {
+@keyframes animacionLetraA {
     from {
-        stroke-dasharray: 0 ;
+        stroke-dashoffset: 452px;
     }
     to {
-        stroke-dasharray: 460px;
+        stroke-dashoffset: 0;
     }
 }
 
+@keyframes animacionBrazoLetraU {
+    from {
+        stroke-dashoffset: 197px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
 
-@keyframes animacionLogo3 {
+@keyframes animacionParteBajaLetraU {
+    from {
+        stroke-dashoffset: 288px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animacionAnilloExterno {
     from {
         stroke-dashoffset: 1250px;
     }
@@ -79,3 +100,22 @@
     }
 }
 
+
+#letra-A {
+    /* Espera 5s para que que la letra A se ubique, en 1s,  en la posición correcta  en un solo paso(step) */
+    animation: rotarLetraA 1s steps(15, end) 5s forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+
+@keyframes rotarLetraA {
+    0% {
+        transform: rotate(-45deg);
+    }
+   
+    100% {
+        transform: rotate(0deg);
+    }
+}
