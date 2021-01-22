@@ -1,6 +1,15 @@
+body {
+    /* background: #ffffff; */
+    background: #e7e4e7
+}
+
 .logo {
     width: 80px;
     height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #e7e4e7;
+    box-shadow: 5px 5px 5px #d8d6d6, -5px -5px 10px #ffffff;
 }
 
 .logo svg .cl1, .logo svg .cl2, .logo svg .cl3, .logo svg .cls-4 {
@@ -32,8 +41,6 @@
     stroke-dashoffset: 0;
     animation: animacionLogoGeneral 0s ease-out forwards, animacionAnilloExterno 2s linear 2.5s forwards;
 }
-
-
 
 #letra-A-1 {
     stroke-dasharray: 452;
@@ -100,7 +107,6 @@
     }
 }
 
-
 #letra-A {
     /* Espera 5s para que que la letra A se ubique, en 1s,  en la posición correcta  en un solo paso(step) */
     animation: rotarLetraA 1s steps(15, end) 5s forwards;
@@ -108,13 +114,10 @@
     transform-box: fill-box;
 }
 
-
-
 @keyframes rotarLetraA {
     0% {
         transform: rotate(-45deg);
     }
-   
     100% {
         transform: rotate(0deg);
     }
